@@ -49,3 +49,65 @@ graph TD
     D --> E[OCR Text Extraction]
     E --> F[Data Parsing & Validation]
     F --> G[Update GUI & Save to CSV]
+
+```
+
+## 🚀 Installation
+
+### Prerequisites
+
+1. **Python 3.8+** installed.
+2. **Tesseract-OCR Engine**:
+* *Windows:* [Download Installer](https://www.google.com/search?q=https://github.com/UB-Mannheim/tesseract/wiki) and add it to your System PATH.
+* *Linux:* `sudo apt-get install tesseract-ocr`
+* *Mac:* `brew install tesseract`
+
+
+
+### Setup
+
+1. **Clone the repository**
+```bash
+git clone [https://github.com/yourusername/NomosID.git](https://github.com/yourusername/NomosID.git)
+cd NomosID
+
+```
+
+
+2. **Install dependencies**
+```bash
+pip install -r requirements.txt
+
+```
+
+
+> **Note:** Your `requirements.txt` should include: `opencv-python`, `pytesseract`, `numpy`, `PyQt5`.
+
+
+3. **Configure Tesseract Path (Windows Only)**
+If Tesseract is not in your PATH, uncomment the line in the code setting the `tesseract_cmd`:
+```python
+# pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
+```
+
+
+
+## 📸 Usage
+
+1. Run the application:
+```bash
+python main.py
+
+```
+
+
+2. The GUI will open, displaying the live camera feed.
+3. Place an ID card in front of the camera.
+4. The system will automatically draw a bounding box around the card, capture the image, and extract the text.
+5. Review the extracted data on the dashboard and check the `attendance.csv` file for the log.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
