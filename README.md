@@ -29,6 +29,12 @@ By integrating a camera-based acquisition pipeline with advanced preprocessing a
 * **⚡ Automated Logging:** Generates attendance records instantly upon successful scan.
 * **🖥️ Desktop Control Interface:** A user-friendly PyQt GUI for monitoring the camera, validating scans, and managing records.
 * **📂 Data Management:** Automatic export of attendance logs to CSV format for easy integration with Excel or databases.
+* 
+## 🎬 Watch Demo Video
+
+ [Click here](https://www.linkedin.com/feed/update/urn:li:activity:7405526970412916737/)
+---
+
 
 ## 🛠️ Technologies Used
 
